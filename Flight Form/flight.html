@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>registration form</title>
+<style>
+body {
+    height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(0, 0, 0);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+    height: 100%;
+  padding: 16px;
+  background: url("backg.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.first{
+    display: inline;
+    justify-content:space-between;
+}
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <form action="/action_page.php">
+    <h1><i>KOIRALA AIRLINES </i></h1>
+    <p>Please fill in this form to book your flight.</p>
+    <hr>
+
+    <div class="first">
+        <label for="Name"><b>NAME</b></label>
+    <input type="text" placeholder="Enter name" name="name" id="name" required>
+
+    <label for="AGE"><b>AGE</b></label>
+    <input type="age" placeholder="Enter age" name="age" id="age" required>&nbsp;&nbsp;
+
+    <label for="Gender"><b>GENDER</b></label>
+    <input type="gender" placeholder="gender" name="gender" id="gender" required>&nbsp;&nbsp;
+
+    <label for="contact no"><b>CONTACT.NO</b></label>
+    <input type="number" placeholder="number" name="number" id="number" required>&nbsp;&nbsp;
+
+    <label for="Email "><b>EMAIL</b></label>
+    <input type="email" placeholder="email" name="email" id="email" required><br><br><br>
+    </div>
+
+    <label for="From"><b>PLACE OF DEPARTURE</b></label>
+    <input type="from" placeholder="from" name="from" id="from" required>&nbsp;&nbsp;
+
+    <label for="To"><b>DESTINATION</b></label>
+    <input type="to" placeholder="TO" name="to" id="to" required>&nbsp;&nbsp;
+
+    <label for="time"><b>TIME OF DEPARTUE</b></label>
+    <input type="time" placeholder="time" name="time" id="time" required>&nbsp;&nbsp;
+    
+<br><br><br>
+    <input type="Submit" value="Submit">
+    <hr>
+    <p>By submitiing you agree to book a flight </p>
+
+    
+</form>
+</div>
+</body>
+</html>
